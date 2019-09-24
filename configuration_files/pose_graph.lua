@@ -24,7 +24,7 @@ POSE_GRAPH = {
     log_matches = true,
     fast_correlative_scan_matcher = {
       linear_search_window = 7.,
-      angular_search_window = math.rad(30.),
+      angular_search_window = math.rad(180),
       branch_and_bound_depth = 7,
     },
     ceres_scan_matcher = {
@@ -83,7 +83,7 @@ POSE_GRAPH = {
   max_num_final_iterations = 200,
   global_sampling_ratio = 0.003,
   log_residual_histograms = true,
-  global_constraint_search_after_n_seconds = 10.,
+  global_constraint_search_after_n_seconds = 1.,
   --  overlapping_submaps_trimmer_2d = {
   --    fresh_submaps_count = 1,
   --    min_covered_area = 2,
