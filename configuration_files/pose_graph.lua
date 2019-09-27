@@ -24,7 +24,7 @@ POSE_GRAPH = {
     log_matches = true,
     fast_correlative_scan_matcher = {
       linear_search_window = 7.,
-      angular_search_window = math.rad(180),
+      angular_search_window = math.rad(30),
       branch_and_bound_depth = 7,
     },
     ceres_scan_matcher = {
